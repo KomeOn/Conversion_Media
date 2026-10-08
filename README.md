@@ -5,6 +5,56 @@ FFmpeg. The application opens a native file picker, inspects the selected
 media, and lets you extract streams, transcode, remux, display a report, or
 save a JSON report when exiting.
 
+## Screenshots
+
+### Application startup and media selection
+
+![Application startup](project_assets/images/program_execution.jpg)
+
+![Media selection and summary](project_assets/images/after_media_selection.jpg)
+
+### Extracting a stream
+
+![Video stream extraction](project_assets/images/operation_1_video_extraction_1.jpg)
+
+![Video extraction output](project_assets/images/operation_1_video_extraction_2.jpg)
+
+### Converting media
+
+![Video conversion options](project_assets/images/operation_2_video_conversion_1.jpg)
+
+![Video conversion result](project_assets/images/operation_2_video_conversion_2.jpg)
+
+### Viewing a media report
+
+![Readable media report](project_assets/images/operation_3_media_report_1.jpg)
+
+![Media report details](project_assets/images/operation_3_media_report_2.jpg)
+
+### Remuxing
+
+![Remux options](project_assets/images/operation_4_remux_media_1.jpg)
+
+![Remux result](project_assets/images/operation_4_remux_media_2.jpg)
+
+### Exiting the application
+
+![Exit and report-save prompt](project_assets/images/operation_5_exit_program.jpg)
+
+### Output folders
+
+![Folder structure before output is created](project_assets/images/before_folder_struture.jpg)
+
+![Output folder structure](project_assets/images/after_folder_structure.jpg)
+
+![Converted output folder](project_assets/images/after_folder_structure_converted.jpg)
+
+![Extracted stream output folder](project_assets/images/after_folder_structure_music.jpg)
+
+![Remuxed output folder](project_assets/images/after_folder_structure_remuxed.jpg)
+
+![Report output folder](project_assets/images/after_folder_structure_report.jpg)
+
 ## Project Objective
 
 Provide a straightforward desktop-console workflow for inspecting and

@@ -1,0 +1,2 @@
+ffmpeg-python
+pytest>=8.0

@@ -1,0 +1,30 @@
+site_name: Local Convertor
+site_description: Local Python and FFmpeg console application for media inspection and conversion.
+site_url: https://komeon.github.io/Conversion_Media/
+repo_url: https://github.com/KomeOn/Conversion_Media
+repo_name: KomeOn/Conversion_Media
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - User Guide: user-guide.md
+  - Formats and Outputs: formats.md
+  - Python API: api.md
+  - Development and Tests: development.md
+  - License: license.md
+
+strict: true

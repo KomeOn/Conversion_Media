@@ -128,6 +128,27 @@ Run only these tests with:
 python -m pytest -q tests/test_media_integration.py
 ```
 
+## Documentation site
+
+The project documentation is maintained in `docs/` and published with
+MkDocs Material and GitHub Pages. To preview it locally:
+
+```bash
+python -m pip install -r requirements-docs.txt
+mkdocs serve
+```
+
+Open <http://127.0.0.1:8000>. To validate the site build:
+
+```bash
+mkdocs build --strict
+```
+
+The GitHub Actions workflow validates documentation on pull requests to
+`master` and deploys it to GitHub Pages after pushes to `master`. In the
+repository's GitHub settings, configure **Pages → Build and deployment →
+Source** as **GitHub Actions**.
+
 ## Project Structure
 
 ```text
@@ -147,6 +168,8 @@ python -m pytest -q tests/test_media_integration.py
 │   ├── file_ops.py             # Platform-specific file picker
 │   ├── ffmpeg_utils.py         # FFmpeg error formatting
 │   └── platform_name.py        # Operating-system identification
+├── docs/                       # MkDocs documentation pages
+├── mkdocs.yml                  # Documentation site configuration
 ├── tests/                      # Automated tests
 ├── requirements.txt            # Python dependencies
 └── test-results/               # Generated test reports

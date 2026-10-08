@@ -27,8 +27,8 @@ metadata.
      supported output format. Selected streams are transcoded.
    - **View media report:** display a readable report in the console.
    - **Remux all streams:** copy media into another container without
-     re-encoding. The current implementation leaves stream selection to
-     FFmpeg's defaults, so it does not guarantee that every track is retained.
+     re-encoding. The app explicitly selects every input stream; remuxing can
+     fail if the destination container cannot store one of those streams.
    - **Exit:** optionally save a JSON inspection report before quitting.
 
 Output folders are created when their corresponding operation runs; they are
@@ -70,6 +70,13 @@ bash tests/run_tests.sh
 ```
 
 The test runner writes timestamped JUnit XML results under `test-results/`.
+The integration tests generate a short sample clip in a temporary directory
+and run real FFmpeg/FFprobe operations; they require both tools on `PATH`.
+Run only these tests with:
+
+```bash
+python -m pytest -q tests/test_media_integration.py
+```
 
 ## Project Structure
 
@@ -169,12 +176,18 @@ reporting a problem, include:
 Do not attach private media or other sensitive files; a short description of
 the media's container and stream types is usually sufficient.
 
-Possible improvements include explicitly mapping all streams for remuxing,
-validating the output codec/container combination before starting FFmpeg,
-supporting configurable output paths, and expanding automated tests to cover
-additional codecs and containers.
+Possible improvements include validating the output codec/container
+combination before starting FFmpeg, supporting configurable output paths, and
+expanding automated tests to cover additional codecs and containers.
 
 ## Owner
 
 - **Display name:** KomeOn
 - **Email:** [komeongithub@duck.com](mailto:komeongithub@duck.com)
+
+## License
+
+This project is licensed under the **GNU General Public License v3.0**
+(GPL-3.0). See [`LICENSE`](./LICENSE) for the complete license text.
+
+Copyright (C) 2026 KomeOn.

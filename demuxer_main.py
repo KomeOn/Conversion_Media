@@ -80,6 +80,7 @@ class Muxer:
                 source,
                 str(output_path),
                 codec="copy",
+                map="0",
             )
             if overwrite:
                 command = command.overwrite_output()

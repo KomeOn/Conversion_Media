@@ -5,6 +5,8 @@ FFmpeg. The application opens a native file picker, inspects the selected
 media, and lets you extract streams, transcode, remux, display a report, or
 save a JSON report when exiting.
 
+Find full documentation on: [Local Convertor](https://komeon.github.io/Conversion_Media/)
+
 ## Screenshots
 
 ### Application startup and media selection
